@@ -22,7 +22,7 @@ module "container_definition" {
   port_mappings = [
     {
       containerPort = var.service_port
-      hostPort      = 80
+      hostPort      = var.service_port
       protocol      = "tcp"
     }
   ]
