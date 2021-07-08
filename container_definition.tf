@@ -17,7 +17,7 @@ module "container_definition" {
     secretOptions = []
   }
 
-  environment = var.environment
+  environment = var.env_vars
 
   port_mappings = [
     {

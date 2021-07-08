@@ -87,3 +87,9 @@ variable "execution_role_arn" {
   type        = string
   description = "IAM Role ARN to run tasks by"
 }
+
+variable "env_vars" {
+  type        = list(map(string))
+  description = "Environment variables for the container"
+  default     = []
+}
