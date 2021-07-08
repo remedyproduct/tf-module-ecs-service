@@ -10,7 +10,7 @@ module "container_definition" {
     logDriver = "awslogs"
     options = {
       awslogs-create-group  = true,
-      awslogs-region        = aws_region.current.name
+      awslogs-region        = data.aws_region.current.name
       awslogs-group         = format("%s-logs", var.environment)
       awslogs-stream-prefix = var.name
     }
