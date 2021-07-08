@@ -52,7 +52,7 @@ No requirements.
 | name | Service Name | `string` | n/a | yes |
 | record\_name | Subdomain the service should be available by (leave empty to use the main domain) | `string` | n/a | yes |
 | service\_port | Docker Image port to route traffic to | `number` | `80` | no |
-| subnets | Subnet IDs to run tasks in | `map(string)` | n/a | yes |
+| subnets | Subnet IDs to run tasks in | `list(string)` | n/a | yes |
 | vpc\_id | VPC ID Service should be launched in | `string` | n/a | yes |
 
 ## Outputs
