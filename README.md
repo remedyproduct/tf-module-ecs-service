@@ -37,7 +37,7 @@ No requirements.
 |------|-------------|------|---------|:--------:|
 | alb\_dns\_name | ALB DNS Name | `string` | n/a | yes |
 | alb\_listener | ALB Listener Service rule should be applied for | `string` | n/a | yes |
-| alb\_security\_group | Attached ALB Security Group to allow inbound traffic from | `string` | n/a | yes |
+| alb\_security\_group\_id | Attached ALB Security Group ID to allow inbound traffic from | `string` | n/a | yes |
 | alb\_zone\_id | ALB domain Zone ID | `string` | n/a | yes |
 | desired\_count | Number of Fargate services to run | `number` | `1` | no |
 | domain | Primary application domain | `string` | n/a | yes |
