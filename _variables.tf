@@ -45,10 +45,9 @@ variable "health_check_path" {
   default = "/"
 }
 
-variable "hosted_zone" {
-  type = map(string)
+variable "hosted_zone_id" {
+  type = string
   description = "Hosted Zone the service should be attached to (may be null)"
-  default = null
 }
 
 variable "record_name" {
