@@ -39,6 +39,7 @@ No requirements.
 | alb\_listener | ALB Listener Service rule should be applied for | `string` | n/a | yes |
 | alb\_security\_group\_id | Attached ALB Security Group ID to allow inbound traffic from | `string` | n/a | yes |
 | alb\_zone\_id | ALB domain Zone ID | `string` | n/a | yes |
+| cluster\_id | Cluster ID service should be attached to | `string` | n/a | yes |
 | desired\_count | Number of Fargate services to run | `number` | `1` | no |
 | domain | Primary application domain | `string` | n/a | yes |
 | env\_vars | Environment variables for the container | `list(map(string))` | `[]` | no |
