@@ -19,9 +19,9 @@ variable "vpc_id" {
   description = "VPC ID Service should be launched in"
 }
 
-variable "alb_security_group" {
+variable "alb_security_group_id" {
   type        = string
-  description = "Attached ALB Security Group to allow inbound traffic from"
+  description = "Attached ALB Security Group ID to allow inbound traffic from"
 }
 
 variable "alb_listener" {
