@@ -93,3 +93,8 @@ variable "env_vars" {
   description = "Environment variables for the container"
   default     = []
 }
+
+variable "cluster_id" {
+  type = string
+  description = "Cluster ID service should be attached to"
+}
