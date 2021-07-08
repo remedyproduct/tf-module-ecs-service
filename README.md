@@ -46,11 +46,11 @@ No requirements.
 | health\_check\_path | URL path for ALB to check the service is up & running | `string` | `"/"` | no |
 | hosted\_zone | Hosted Zone the service should be attached to (may be null) | `map(string)` | `null` | no |
 | image | Docker Image to deploy | `string` | n/a | yes |
+| image\_version | Docker Image version to deploy | `string` | `"latest"` | no |
 | name | Service Name | `string` | n/a | yes |
 | record\_name | Subdomain the service should be available by (leave empty to use the main domain) | `string` | n/a | yes |
 | service\_port | Docker Image port to route traffic to | `number` | `80` | no |
 | subnets | Subnet IDs to run tasks in | `map(string)` | n/a | yes |
-| version | Docker Image version to deploy | `string` | `"latest"` | no |
 | vpc\_id | VPC ID Service should be launched in | `string` | n/a | yes |
 
 ## Outputs
