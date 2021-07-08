@@ -3,8 +3,8 @@ data "aws_region" "current" {}
 module "container_definition" {
   source = "github.com/cloudposse/terraform-aws-ecs-container-definition?ref=0.57.0"
 
-  container_name   = var.name
-  container_image  = format("%s:%s", var.image, var.image_version)
+  container_name  = var.name
+  container_image = format("%s:%s", var.image, var.image_version)
 
   log_configuration = {
     logDriver = "awslogs"

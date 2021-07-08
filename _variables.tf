@@ -10,7 +10,7 @@ variable "environment" {
 }
 
 variable "subnets" {
-  type = map(string)
+  type        = map(string)
   description = "Subnet IDs to run tasks in"
 }
 
@@ -30,60 +30,60 @@ variable "alb_listener" {
 }
 
 variable "alb_zone_id" {
-  type = string
+  type        = string
   description = "ALB domain Zone ID"
 }
 
 variable "alb_dns_name" {
-  type = string
+  type        = string
   description = "ALB DNS Name"
 }
 
 variable "health_check_path" {
-  type = string
+  type        = string
   description = "URL path for ALB to check the service is up & running"
-  default = "/"
+  default     = "/"
 }
 
 variable "hosted_zone_id" {
-  type = string
+  type        = string
   description = "Hosted Zone the service should be attached to (may be null)"
 }
 
 variable "record_name" {
-  type = string
+  type        = string
   description = "Subdomain the service should be available by (leave empty to use the main domain)"
 }
 
 variable "domain" {
-  type = string
+  type        = string
   description = "Primary application domain"
 }
 
 variable "image" {
-  type = string
+  type        = string
   description = "Docker Image to deploy"
 }
 
 variable "image_version" {
-  type = string
+  type        = string
   description = "Docker Image version to deploy"
-  default = "latest"
+  default     = "latest"
 }
 
 variable "service_port" {
-  type = number
+  type        = number
   description = "Docker Image port to route traffic to"
-  default = 80
+  default     = 80
 }
 
 variable "desired_count" {
-  type = number
+  type        = number
   description = "Number of Fargate services to run"
-  default = 1
+  default     = 1
 }
 
 variable "execution_role_arn" {
-  type = string
+  type        = string
   description = "IAM Role ARN to run tasks by"
 }
