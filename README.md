@@ -17,7 +17,7 @@ No requirements.
 
 | Name | Source | Version |
 |------|--------|---------|
-| container_definition | github.com/cloudposse/terraform-aws-ecs-container-definition?ref=0.24.0 |  |
+| container_definition | github.com/cloudposse/terraform-aws-ecs-container-definition?ref=0.57.0 |  |
 
 ## Resources
 
