@@ -44,7 +44,7 @@ No requirements.
 | environment | Environment (development, qa, live, etc.) | `string` | `"development"` | no |
 | execution\_role\_arn | IAM Role ARN to run tasks by | `string` | n/a | yes |
 | health\_check\_path | URL path for ALB to check the service is up & running | `string` | `"/"` | no |
-| hosted\_zone | Hosted Zone the service should be attached to (may be null) | `map(string)` | `null` | no |
+| hosted\_zone\_id | Hosted Zone the service should be attached to (may be null) | `string` | n/a | yes |
 | image | Docker Image to deploy | `string` | n/a | yes |
 | image\_version | Docker Image version to deploy | `string` | `"latest"` | no |
 | name | Service Name | `string` | n/a | yes |
