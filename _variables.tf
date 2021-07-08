@@ -66,7 +66,7 @@ variable "image" {
   description = "Docker Image to deploy"
 }
 
-variable "version" {
+variable "image_version" {
   type = string
   description = "Docker Image version to deploy"
   default = "latest"
