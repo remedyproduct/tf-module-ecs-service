@@ -41,6 +41,7 @@ No requirements.
 | alb\_zone\_id | ALB domain Zone ID | `string` | n/a | yes |
 | desired\_count | Number of Fargate services to run | `number` | `1` | no |
 | domain | Primary application domain | `string` | n/a | yes |
+| env\_vars | Environment variables for the container | `list(map(string))` | `[]` | no |
 | environment | Environment (development, qa, live, etc.) | `string` | `"development"` | no |
 | execution\_role\_arn | IAM Role ARN to run tasks by | `string` | n/a | yes |
 | health\_check\_path | URL path for ALB to check the service is up & running | `string` | `"/"` | no |
