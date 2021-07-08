@@ -10,7 +10,7 @@ variable "environment" {
 }
 
 variable "subnets" {
-  type        = map(string)
+  type        = list(string)
   description = "Subnet IDs to run tasks in"
 }
 
