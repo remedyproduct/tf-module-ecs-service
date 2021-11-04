@@ -8,7 +8,7 @@ resource "aws_lb_listener_rule" "main" {
 
   condition {
     host_header {
-      values = [format("%s.%s", var.record_name, var.domain)]
+      values = var.record_name != "" ? [format("%s.%s", var.record_name, var.domain)] : [var.domain]
     }
   }
 }

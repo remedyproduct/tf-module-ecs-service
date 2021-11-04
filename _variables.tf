@@ -95,6 +95,6 @@ variable "env_vars" {
 }
 
 variable "cluster_id" {
-  type = string
+  type        = string
   description = "Cluster ID service should be attached to"
 }
