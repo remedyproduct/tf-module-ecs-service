@@ -60,17 +60,6 @@ variable "domain" {
   description = "Primary application domain"
 }
 
-variable "image" {
-  type        = string
-  description = "Docker Image to deploy"
-}
-
-variable "image_version" {
-  type        = string
-  description = "Docker Image version to deploy"
-  default     = "latest"
-}
-
 variable "service_port" {
   type        = number
   description = "Docker Image port to route traffic to"
@@ -88,13 +77,13 @@ variable "execution_role_arn" {
   description = "IAM Role ARN to run tasks by"
 }
 
-variable "env_vars" {
-  type        = list(map(string))
-  description = "Environment variables for the container"
-  default     = []
-}
-
 variable "cluster_id" {
   type        = string
   description = "Cluster ID service should be attached to"
+}
+
+variable "container_definitions" {
+  type        = list(object)
+  description = ""
+  default     = []
 }
