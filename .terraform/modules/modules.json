@@ -1,1 +1,0 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"container_definition","Source":"github.com/cloudposse/terraform-aws-ecs-container-definition?ref=0.57.0","Dir":".terraform/modules/container_definition"}]}
