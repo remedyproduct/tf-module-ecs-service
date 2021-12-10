@@ -84,6 +84,6 @@ variable "cluster_id" {
 
 variable "container_definitions" {
   type        = list(object)
-  description = "External container definition"
+  description = "Container definitions to be runned in task"
   default     = []
 }
