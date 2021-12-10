@@ -84,6 +84,6 @@ variable "cluster_id" {
 
 variable "container_definitions" {
   type        = list(object)
-  description = ""
+  description = "External container definition"
   default     = []
 }
