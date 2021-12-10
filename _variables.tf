@@ -83,7 +83,7 @@ variable "cluster_id" {
 }
 
 variable "container_definitions" {
-  type        = list(object)
-  description = "Container definitions to be runned in task"
-  default     = []
+  type        = string
+  description = "JSON encoded list of container definitions"
+  default     = "[]"
 }
