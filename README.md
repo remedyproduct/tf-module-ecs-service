@@ -37,7 +37,7 @@ No Modules.
 | alb\_security\_group\_id | Attached ALB Security Group ID to allow inbound traffic from | `string` | n/a | yes |
 | alb\_zone\_id | ALB domain Zone ID | `string` | n/a | yes |
 | cluster\_id | Cluster ID service should be attached to | `string` | n/a | yes |
-| container\_definitions | External container definition | `list(object)` | `[]` | no |
+| container\_definitions | Container definitions to be runned in task | `list(object)` | `[]` | no |
 | desired\_count | Number of Fargate services to run | `number` | `1` | no |
 | domain | Primary application domain | `string` | n/a | yes |
 | environment | Environment (development, qa, live, etc.) | `string` | `"development"` | no |
