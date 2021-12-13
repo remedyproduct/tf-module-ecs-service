@@ -48,6 +48,8 @@ No Modules.
 | record\_name | Subdomain the service should be available by (leave empty to use the main domain) | `string` | n/a | yes |
 | service\_port | Docker Image port to route traffic to | `number` | `80` | no |
 | subnets | Subnet IDs to run tasks in | `list(string)` | n/a | yes |
+| task\_definition\_cpu | Task CPU should be attached to | `string` | `"256"` | no |
+| task\_definition\_memory | Task memory should be attached to | `string` | `"512"` | no |
 | vpc\_id | VPC ID Service should be launched in | `string` | n/a | yes |
 
 ## Outputs
