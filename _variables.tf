@@ -87,3 +87,15 @@ variable "container_definitions" {
   description = "JSON encoded list of container definitions"
   default     = "[]"
 }
+
+variable "task_definition_cpu" {
+  type        = string
+  description = "Task CPU should be attached to"
+  default     = "256"
+}
+
+variable "task_definition_memory" {
+  type        = string
+  description = "Task memory should be attached to"
+  default     = "512"
+}
