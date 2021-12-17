@@ -90,12 +90,12 @@ variable "container_definitions" {
 
 variable "task_definition_cpu" {
   type        = string
-  description = "Task CPU should be attached to"
+  description = "CPU reserve to ECS Task Definition"
   default     = "256"
 }
 
 variable "task_definition_memory" {
   type        = string
-  description = "Task memory should be attached to"
+  description = "Memory reserve to ECS Task Definition"
   default     = "512"
 }
