@@ -90,12 +90,12 @@ variable "container_definitions" {
 
 variable "task_definition_cpu" {
   type        = string
-  description = "CPU reserve to ECS Task Definition"
+  description = "Number of cpu units used by the task"
   default     = "256"
 }
 
 variable "task_definition_memory" {
   type        = string
-  description = "Memory reserve to ECS Task Definition"
+  description = "Amount (in MiB) of memory used by the task"
   default     = "512"
 }
